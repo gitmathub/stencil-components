@@ -10,7 +10,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface MatSlider {}
+  interface MatSlider {
+    'rangeValues': string[];
+  }
 }
 
 declare global {
@@ -27,7 +29,9 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface MatSlider {}
+  interface MatSlider {
+    'rangeValues'?: string[];
+  }
 
   interface IntrinsicElements {
     'mat-slider': MatSlider;

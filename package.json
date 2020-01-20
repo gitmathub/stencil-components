@@ -1,6 +1,6 @@
 {
-  "name": "stencil-components",
-  "version": "0.0.1",
+  "name": "@npmat/stencil-components",
+  "version": "0.0.2",
   "description": "Mat's Stencil Components",
   "author": {
     "name": "Mat Daus",
@@ -26,11 +26,18 @@
     "build": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
+    "screenshot": "stencil test --e2e --screenshot",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
   },
   "devDependencies": {
-    "@stencil/core": "^1.8.4"
+    "@stencil/core": "^1.8.4",
+    "@types/jest": "24.0.25",
+    "@types/puppeteer": "^1.20.3",
+    "jest": "24.9.0",
+    "jest-cli": "24.9.0",
+    "puppeteer": "1.20.0",
+    "puppeteer-firefox": "^0.5.1"
   },
   "license": "MIT"
 }
