@@ -1,0 +1,24 @@
+button-group-radio {
+    display: flex;
+}
+
+:host ::slotted(label) {
+    width: 90px;
+    padding: 10px;
+    width: 90px;
+    border: 1px red solid;
+    background: #EEEEEE;
+}
+
+:host ::slotted(input[type="radio"]) {
+    width: 0px;
+    opacity: 0;
+    margin: 0px;
+    padding: 0px;
+    -webkit-appearance: none;
+}
+
+:host ::slotted(input[type="radio"]:checked) {
+    width: 50px;
+    background: #DDDDDD;
+}
