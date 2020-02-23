@@ -1,0 +1,46 @@
+:host {
+    margin: 0;
+    padding: 0;
+}
+
+::slotted(*) {
+    margin: 0;
+    padding: 0;
+}
+
+::slotted(input) {
+    width: 0px;
+    opacity: 1;
+    margin: -5px;
+}
+
+slot {
+    display: inline;
+    margin: 0;
+    background-color: red;
+}
+
+::slotted(label) {
+    background-color: khaki;
+    padding: 1rem;
+    border: solid burlywood;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* ::slotted(input[type="radio"]:checked) {
+    background-color: coral;
+    width: 10px;
+}
+
+::slotted(input[type="radio"]:checked)+ ::slotted(label) {
+    background-color: coral;
+    width: 10px;
+} */
+
+
+/* ::slotted(input) ::slotted(label) {
+    background-color: coral;
+    width: 10px;
+} */

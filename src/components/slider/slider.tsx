@@ -17,7 +17,7 @@ export class Slider {
   }
 
   render() {
-    console.log(this)
+    // console.log(this)
 
     return (
       <Host>
@@ -25,7 +25,6 @@ export class Slider {
           <input id="rangeSlider" type="range" min="1" max="100" value="50" class="slider"
             onChange={(event) => this.handleChange(event)}
           ></input>
-          <input name="dummy"></input>
         </div>
         <div>
           <span>value: {this.sliderValue}</span>

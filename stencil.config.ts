@@ -3,7 +3,7 @@ import { Config } from '@stencil/core';
 export const config: Config = {
   namespace: 'stencil-components',
   bundles: [
-    { components: ['mat-slider'] }],
+    { components: ['mat-slider', 'mat-button-group-radio'] }],
   outputTargets: [
     {
       type: 'dist',

@@ -12,10 +12,22 @@
 </head>
 
 <body>
+  <h1>Stencil Playground</h1>
   <section>
     <article>
-      <h1>Custom Slider</h1>
+      <h2>Custom Slider</h2>
       <mat-slider></mat-slider>
+    </article>
+    <article>
+      <h2>Button Group (Radio Inputs)</h2>
+      <mat-button-group-radio>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="diverse" id="diverse">
+        <label for="diverse">Diverse</label>
+      </mat-button-group-radio>
     </article>
   </section>
 </body>
