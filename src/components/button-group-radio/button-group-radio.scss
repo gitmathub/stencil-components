@@ -2,23 +2,24 @@ button-group-radio {
     display: flex;
 }
 
-:host ::slotted(label) {
+:host ::slotted(input[type="radio"]) {
+    position: relative;
     width: 90px;
+    height: 90px;
     padding: 10px;
-    width: 90px;
     border: 1px red solid;
     background: #EEEEEE;
-}
-
-:host ::slotted(input[type="radio"]) {
-    width: 0px;
-    opacity: 0;
-    margin: 0px;
-    padding: 0px;
     -webkit-appearance: none;
 }
 
 :host ::slotted(input[type="radio"]:checked) {
-    width: 50px;
+    // width: 50px;
     background: #DDDDDD;
+}
+
+:host ::slotted(label) {
+    margin-left: -40px;
+    margin-top: 30px;
+    z-index: 100;
+    // position: absolute;
 }
